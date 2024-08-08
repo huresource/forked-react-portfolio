@@ -556,14 +556,14 @@ button:focus {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(124, 186, 252, 0.637) !important;
+  border: 1.7px solid rgba(63, 148, 240, 0.637) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
   display: table !important;
   box-shadow: 4px 5px 4px 3px rgba(5, 62, 122, 0.137) !important;
   overflow: hidden !important;
-  transition: all 0.4s ease 0s !important;
+  transition: all 0.3s ease 0s !important;
 }
 
 @media (max-width: 767px) {
@@ -575,7 +575,7 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  border: 2.2px solid rgb(79, 162, 251) !important;
 }
 .tech-icon-images {
   padding: 20px !important;
@@ -728,7 +728,7 @@ button:focus {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #7cbafc5e !important;
+  background-color: #215e9e9e !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;

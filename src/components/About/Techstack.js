@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
+import bubbleLogo from "../../Assets/bubble-io-logo.svg";
+import { FaShopify } from "react-icons/fa";
 import {
   DiJavascript1,
   DiReact,
@@ -23,10 +24,12 @@ function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <FaShopify />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <img
+        src={bubbleLogo}
+        style={{ maxHeight: "120px" }} />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <TbBrandGolang />
