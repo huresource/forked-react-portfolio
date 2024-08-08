@@ -7,34 +7,34 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
+          <p style={{ textAlign: "left" }}>
+            Hi again! I'm <span className="purple">Priscilla. </span>
             <br />
-            I am currently employed as a software developer at Juspay.
+            A freelancer based out of <span className="purple"> Denver, Colorado.</span>
             <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            I <span className="purple">create</span> websites.
+            <br />
+            I <span className="purple">manage</span> Shopify stores.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            <span style={{ fontWeight: "600" }}>Other things I love</span>
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Cats, all cats
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImPointRight /> Philosophical quotes
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Discovering new productivity tools
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+          <p style={{ color: "rgb(154, 198, 245)" }}>
+            "Think lightly of yourself and deeply of the world."{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer" style={{ opacity: "0.5" }}>Miyamoto Musashi</footer>
         </blockquote>
       </Card.Body>
     </Card>
