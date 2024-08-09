@@ -1,24 +1,28 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import bubbleLogo from "../../Assets/bubble-io-logo.svg";
-import { FaShopify } from "react-icons/fa";
+import { 
+  FaShopify,
+  FaCss3,
+  FaHtml5,
+  FaWordpressSimple,
+  FaAmazon,
+} from "react-icons/fa";
 import {
   DiJavascript1,
   DiReact,
   DiNodejs,
-  DiMongodb,
-  DiPython,
   DiGit,
-  DiJava,
 } from "react-icons/di";
 import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
+  SiGoogleanalytics,
+  SiNotion,
+  SiAsana,
+  SiCanva,
+  SiVisualstudiocode,
+  SiSlack,
+  SiMacos,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
   return (
@@ -32,40 +36,43 @@ function Techstack() {
         style={{ maxHeight: "120px" }} />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+        <DiJavascript1 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+        <FaHtml5 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaCss3 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
+        <FaWordpressSimple />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+        <FaAmazon />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+        <SiAsana />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+        <SiNotion />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
+        <SiCanva />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
+        <SiGoogleanalytics />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
+        <SiMacos />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
+        <SiVisualstudiocode />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <SiSlack />
       </Col>
     </Row>
   );
