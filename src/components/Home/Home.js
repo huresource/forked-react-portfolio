@@ -3,11 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
-import TypeAnimated from "./Type2";
+import Type from "./Type";
 import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
 import HomeInfo from "./HomeInfo";
-import Titles from "./Titles";
+
 
 function Home() {
   return (
@@ -28,7 +28,7 @@ function Home() {
                 I'M
                 <strong className="main-name"> PRISCILLA</strong>
               </h1>
-              <TypeAnimated />
+              <Type />
               
             </Col>
 
