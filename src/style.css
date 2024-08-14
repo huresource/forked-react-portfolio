@@ -1,14 +1,17 @@
 html {
   --section-background-color: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
+    to bottom right,
+    rgb(0, 4, 10),
+    rgb(0, 11, 28),
+    rgb(0, 25, 65)
   );
 
   --image-gradient: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
+    to top right,
+    /* rgba(3, 10, 20, 0.3),
+    rgba(6, 22, 47, 0.675) */
+    /* rgba(0, 14, 28, 0.983),
+    rgba(3, 38, 90, 0.485) */
   );
 
   --imp-text-color: #7cbafc;
@@ -19,8 +22,51 @@ html {
   /* font-weight: 600; */
 }
 
+.bluer {
+  /* color: #7cbafc; */
+  color: #82bfff;
+  /* color: #f2eb2c; */
+  /* color: var(--imp-text-color); */
+  
+}
+
+.text-shadow {
+  text-shadow: #ffffff83 0 0 40px;
+  /* text-shadow: #fecc00 0 0 25px; */
+}
+
+.underline::after {
+  content: "";
+  position: relative;
+  display: block;
+  height: 3px;
+  width: 100%;
+  border-radius: 16px;
+  background: #4b5f74;
+  bottom: 1px;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease-out 0s;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.letter-space-1 {
+  letter-spacing: 2px;
+}
+
 button:focus {
   box-shadow: none !important;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
 }
 
 /* --------- */
@@ -33,7 +79,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
+  background-color: #050813;
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -58,18 +104,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #193150;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: rgba(121, 167, 216, 0.959);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: rgba(130, 174, 235, 0.911);
   border-radius: 12px;
 }
 
@@ -77,7 +123,7 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: #000612b4 !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -170,6 +216,13 @@ button:focus {
   padding: 0.8rem 1rem !important;
 }
 
+.nav-icon {
+  height: 15px;
+  width: 17px;
+  margin-bottom: 3px;
+  color: #307ed0;
+}
+
 @media (max-width: 767px) {
   .nav-link {
     padding: 0.7rem 1rem !important;
@@ -192,7 +245,7 @@ button:focus {
   content: "";
   position: relative;
   display: block;
-  height: 5px;
+  height: 3px;
   width: 0;
   border-radius: 16px;
   background: #7cbafc;
@@ -252,23 +305,38 @@ button:focus {
 }
 
 .home-header {
-  padding-top: 80px !important;
+  /* padding-top: 80px !important; */
 }
 
 .home-section {
   position: relative;
-  z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
-  background-position: top center;
+  /* z-index: -1; */
+  background-image: url(./Assets/home-bg-wave2.png);
+  /* background-image: var(--image-gradient), url(./Assets/home-bg-wave.png); */
+  background-position: bottom center;
   background-repeat: no-repeat;
-  padding-bottom: 30px !important;
+  background-size: cover;
+  padding-bottom: 3rem !important;
   padding-top: 30px !important;
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
+  padding: 13rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
+}
+
+.home-info {
+  text-align: left;
+  font-size: 1.2em;
+  /* width: fit-content; */
+  padding-top: 20px;
+  margin: auto;
+}
+
+.info {
+  font-size: 1.1em;
+  font-weight: 300;
 }
 
 .heading {
@@ -283,6 +351,20 @@ button:focus {
 
 .main-name {
   color: #7cbafc;
+}
+
+.typed {
+  font-size: 2.2em !important;
+  color: #7CA6D4 !important;
+  font-weight: 600 !important;
+  text-align: left;
+}
+
+.small-type {
+  font-size: 1.5em !important;
+  color: #ffffff !important;
+  font-weight: 300 !important;
+  text-align: left;
 }
 
 .Typewriter__wrapper {
@@ -308,7 +390,7 @@ button:focus {
 
 .myAvtar {
   justify-content: center !important;
-  padding-top: 9em !important;
+  /* padding-top: 9em !important; */
 }
 
 @media (max-width: 767px) {
@@ -321,25 +403,27 @@ button:focus {
 .home-about-section {
   position: relative;
   padding-bottom: 70px !important;
-  padding-top: 70px !important;
+  padding-top: 0px !important;
 }
 
 .home-about-description {
   color: white !important;
-  padding-top: 100px !important;
+  padding-top: 50px !important;
   padding-bottom: 20px !important;
-  text-align: center;
+  padding-left: 50px !important;
+  text-align: left;
+  /* justify-self: center !important; */
 }
 
 .home-about-body {
   padding-top: 50px;
   font-size: 1.2em !important;
-  text-align: left;
+  text-align: center;
 }
 
 .home-about-social {
   text-align: center !important;
-  padding-top: 25px;
+  padding-top: 15rem;
   color: white !important;
 }
 
@@ -372,7 +456,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
+  background: #0869d1;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -380,13 +464,13 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  box-shadow: 0 0 15px #0869d1;
 }
 
 .home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  color: #0869d1;
+  box-shadow: 0 0 5px #0869d1;
+  text-shadow: 0 0 2px #0869d1;
 }
 
 .social-icons {
@@ -396,14 +480,14 @@ button:focus {
 }
 
 .icon-colour {
-  color: #700c86 !important;
+  color: #0869d1 !important;
 }
 
 /* --------- */
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: #000612;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -447,7 +531,7 @@ button:focus {
 /* --------- */
 .project-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 100px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
 }
@@ -461,7 +545,7 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  box-shadow: 0 4px 9px 5px #0265ce8c !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -471,7 +555,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 7px 8px #0869d1b4 !important;
 }
 
 .blog-card {
@@ -525,8 +609,8 @@ button:focus {
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #1972D2 !important;
-  border-color: #1972D2 !important;
+  background-color: #032c58 !important;
+  border-color: #215E9E !important;
 }
 .btn:focus {
   outline: none !important;

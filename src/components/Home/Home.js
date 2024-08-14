@@ -1,9 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
+import homeLogo from "../../Assets/home-main.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
-import Type from "./Type";
+import TypeAnimated from "./Type2";
+import myImg from "../../Assets/avatar.png";
+import Tilt from "react-parallax-tilt";
+import HomeInfo from "./HomeInfo";
+import Titles from "./Titles";
 
 function Home() {
   return (
@@ -24,19 +28,14 @@ function Home() {
                 I'M
                 <strong className="main-name"> PRISCILLA</strong>
               </h1>
-
-              <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
-              </div>
+              <TypeAnimated />
+              
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              />
+            <Col md={4} className="myAvtar">
+                <Tilt>
+                  <img src={myImg} className="img-fluid" alt="avatar" style={{ maxHeight: "450px" }}/>
+              </Tilt>
             </Col>
           </Row>
         </Container>

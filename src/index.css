@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Questrial&display=swap');
 body {
   margin: 0;
-  font-family: "Questrial", sans-serif !important;
+  font-family: "Inter", sans-serif !important;
   letter-spacing: 0.6px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+  /* background-image: linear-gradient(to left, rgb(20, 25, 41), rgb(15, 21, 35)); */
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 11, 28),
+    rgb(0, 20, 49),
+    rgb(1, 32, 81)
+    );
+
 }
