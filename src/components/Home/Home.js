@@ -26,7 +26,7 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> PRISCILLA</strong>
+                <strong className="purple"> PRISCILLA</strong>
               </h1>
               <Type />
               

@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Questrial&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
 html {
   --section-background-color: linear-gradient(
     to bottom right,
-    rgb(0, 4, 10),
-    rgb(0, 11, 28),
-    rgb(0, 25, 65)
+    rgb(0, 13, 33),
+    rgb(0, 11, 28)
+    /* rgb(0, 25, 65) */
   );
 
   --image-gradient: linear-gradient(
@@ -14,7 +16,7 @@ html {
     rgba(3, 38, 90, 0.485) */
   );
 
-  --imp-text-color: #7cbafc;
+  --imp-text-color: #7cbafc; /*03dcb4*/
 }
 
 .purple {
@@ -28,6 +30,15 @@ html {
   /* color: #f2eb2c; */
   /* color: var(--imp-text-color); */
   
+}
+
+.questrial {
+  font-family: 'Questrial', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  /* font-family: 'Overpass', sans-serif; */
+  font-weight: 500;
 }
 
 .text-shadow {
@@ -67,6 +78,10 @@ button:focus {
 
 .align-center {
   align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 /* --------- */
@@ -311,8 +326,9 @@ button:focus {
 .home-section {
   position: relative;
   /* z-index: -1; */
-  background-image: url(./Assets/home-bg-wave2.png);
-  /* background-image: var(--image-gradient), url(./Assets/home-bg-wave.png); */
+  /* background-image: url(./Assets/home-bg-wave2.png); */
+  background-image: url(./Assets/home-bg-aurora.png);
+  /* background-image: linear-gradient(to top, rgba(0, 8, 24, 0.085), rgba(69, 110, 181, 0.223)), url(./Assets/home-bg-wave2.png); */
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -322,7 +338,7 @@ button:focus {
 
 .home-content {
   padding: 13rem 0 2rem !important;
-  color: whitesmoke;
+  color: rgb(255, 255, 255);
   text-align: left;
 }
 
@@ -368,13 +384,14 @@ button:focus {
 }
 
 .Typewriter__wrapper {
-  font-size: 2.2em !important;
-  color: #7CA6D4 !important;
-  font-weight: 600 !important;
+  font-size: 2em !important;
+  color: whitesmoke !important;
+  font-weight: 280 !important;
+  /* text-shadow: #fff 0 0 40px; */
 }
 .Typewriter__cursor {
-  font-size: 2.4em !important;
-  color: #7CA6D4 !important;
+  font-size: 2.2em !important;
+  color: #c9c9c9 !important;
 }
 
 @media (max-width: 767px) {
