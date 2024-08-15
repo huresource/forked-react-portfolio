@@ -22,7 +22,7 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.8em", paddingBottom: "20px" }}>
-              a little bit <strong className="purple">about</strong> me
+              a little bit <strong className="fat-blue">about</strong> me
             </h1>
             <Aboutcard />
           </Col>
@@ -35,7 +35,7 @@ function About() {
           </Col>
         </Row>
         <h1 className="project-heading">
-          Skills, Tools <strong className="purple">& </strong> Platforms
+          Skills, Tools <strong className="fat-blue">& </strong> Platforms
         </h1>
 
         <Techstack />

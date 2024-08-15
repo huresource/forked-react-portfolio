@@ -3,11 +3,12 @@
 body {
   margin: 0;
   font-family: "Overpass", sans-serif !important;
-  font-weight: 300 !important;
+  font-weight: 200 !important;
   letter-spacing: 0.6px;
+  color: whitesmoke !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to right, rgb(0, 6, 13), rgb(0, 8, 29));
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0));
   /* background-image: linear-gradient(
     to bottom,
     rgb(0, 11, 28),

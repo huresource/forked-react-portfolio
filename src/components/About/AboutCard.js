@@ -8,16 +8,16 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "left" }}>
-            Hi again! I'm <span className="purple">Priscilla. </span>
+            Hi again! I'm <span className="enhance">Priscilla. </span>
             <br />
-            A freelancer based out of <span className="purple"> Denver, Colorado.</span>
+            A freelancer based out of <span className="enhance"> Denver, Colorado.</span>
             <br />
-            I <span className="purple">create</span> websites.
+            I <span className="enhance">create</span> websites.
             <br />
-            I <span className="purple">manage</span> Shopify stores.
+            I <span className="enhance">manage</span> Shopify stores.
             <br />
             <br />
-            <span style={{ fontWeight: "600" }}>Other things I love</span>
+            <span className="h5">Other things I love</span>
           </p>
           <ul>
             <li className="about-activity">
@@ -31,10 +31,13 @@ function AboutCard() {
             </li>
           </ul>
 
-          <p style={{ color: "rgb(154, 198, 245)" }}>
-            "Think lightly of yourself and deeply of the world."{" "}
-          </p>
-          <footer className="blockquote-footer" style={{ opacity: "0.5" }}>Miyamoto Musashi</footer>
+          <div className="quote-block">
+            <p className="quote">
+              "Think lightly of yourself and deeply of the world."{" "}
+            </p>
+            <footer className="blockquote-footer">Miyamoto Musashi</footer>
+          </div>
+          
         </blockquote>
       </Card.Body>
     </Card>
